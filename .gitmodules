@@ -1,0 +1,3 @@
+[submodule "payment_visanet"]
+	path = payment_visanet
+	url = https://github.com/rocketgithub/payment_visanet
