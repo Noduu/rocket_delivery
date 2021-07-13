@@ -39,9 +39,11 @@
                 <input type='hidden' name='c_ship_to_phone' t-att-value='phone'/>
                 <input type='hidden' name='c_ship_to_email' t-att-value="email"/>
                 <input type='hidden' name='c_ship_to_state' t-att-value="state"/>
-            </div>			
+                
+            </div>
+            		
 		</template>
-		<template id="cybersource_s2s_form">
+		<template id="cybersource_s2s_form">		
             <input type="hidden" name="data_set" data-create-route="/payment/cybersource/s2s/create_json_3ds"/>
             <div class="mt8">
                 <div t-att-class="'form-group col-md-12' if bootstrap_formatting else 'form-group'">
@@ -75,8 +77,9 @@
                     <option value="60">60 días</option> 
                     </select>         
             </div>
+        
         </template>
-        <template id="assets_backend" name="fl_emp_dashbord assets" inherit_id="web.assets_frontend">
+        <template id="assets_backend" name="fl_emp_dashbord assets" inherit_id="web.assets_frontend">		
             <xpath expr="." position="inside">
                 <link href="/aspl_payment_cybersource_ee/static/src/css/style.css" rel="stylesheet"/>
             </xpath>
@@ -95,6 +98,5 @@
 	            </form>
             </t>
         </template>
-        
 	</data>
 </odoo>
