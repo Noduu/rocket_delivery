@@ -86,13 +86,6 @@ body {
   background: #211b19;
 }
 
-.tipo-pago span{
-  margin-left: 15px;
-}
-
-.tipo-pago .radio-pago{
-  margin-left: 10px;
-}
 
 @media only screen and (max-width: 767px) {
   .notfound .notfound-404 h1 {
